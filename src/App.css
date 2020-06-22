@@ -1,38 +1,79 @@
-.App {
-  text-align: center;
+.container{
+  max-width: 400px;
+  min-height: 500px;
+  margin: 0 auto;
+  background-color: #efefef;
+  box-shadow: 0 0 10px gray;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding: 15px 50px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.in {
+  color: rgba(0,150,0,1);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.ex {
+  color: rgba(200,0,0,1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.text-center{
+text-align: center;
+}
+
+.in_ex_cont{
+ display: flex;
+ justify-content: space-around;
+ background-color: white;
+ box-shadow: 0 0 10px gray;
+}
+
+.history{
+  margin: 0; 
+  padding: 0;
+}
+
+.history >li {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+  justify-content: space-between;
+  box-shadow:0 0 10px gray;
+  padding: 10px 15px;
+  background-color: white;
+  margin: 5px 0;
+  border-radius: 4px;
+}
+
+
+.transaction-form input{
+  width:100%;
+  margin: 10px 0;
+  padding: 5px 5px;
+}
+
+.del{
+  position: relative;
+  background-color: lightcoral;
+  top: 35px;
+  right: 30px;
   color: white;
+  cursor: pointer;
+  opacity: 0.1;
+  transition: opacity 0.3s ease;
+}
+.del:hover {
+  opacity: 1;
 }
 
-.App-link {
-  color: #61dafb;
+.submitBtn {
+  font-weight: bold;
+  font-size: 15px;
+  border-radius: 10px;
+  cursor: pointer;
+  color: white;
+  background-color: green;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+footer {
+  font-weight: bold;
+  padding: 5px;
 }
